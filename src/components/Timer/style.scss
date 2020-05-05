@@ -1,0 +1,26 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.timer_wrapper {
+  @include center-flex();
+  position: absolute;
+  top: 550px;
+  width: 100%;
+
+  & > div.timer {
+    @include center-flex();
+    background-color: $primary-purple;
+    padding: 5px 15px;
+    border: thin solid $primary-white;
+    border-radius: 15px;
+    position: relative;
+    left: 175px;
+
+    & > span {
+      font-size: 25px;
+      color: $primary-white;
+      margin: 0 2px;
+    }
+  }
+}
+

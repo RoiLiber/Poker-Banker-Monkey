@@ -1,0 +1,44 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.game_ratio_wrapper {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: $primary-grey;
+    margin: 5px;
+  }
+
+  & > div.radio_head_line {
+    display: flex;
+    justify-content: center;
+    border-bottom: thin solid $primary-white;
+
+    & > label {
+      margin: 20px 10px;
+      color: $primary-white;
+      position: relative;
+      right: 5px;
+    }
+  }
+
+  & > div.amount_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+  }
+
+  & > div button {
+    border: thin solid $primary-purple;
+    width: 150px;
+    margin: 0 15px 0 35px;
+    color: $primary-white;
+  }
+}

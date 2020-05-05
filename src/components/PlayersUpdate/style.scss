@@ -1,0 +1,28 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.update_players_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $primary-white;
+
+  & > div.update_players_nav {
+    width: 70%;
+    margin-bottom: 50px;
+
+    & > div {
+      width: 90%;
+
+      & > button {
+        width: 50%;
+        color: $primary-background;
+        font-weight: bold;
+      }
+      & > button.selected {
+        background-color: $primary-green;
+      }
+    }
+  }
+}

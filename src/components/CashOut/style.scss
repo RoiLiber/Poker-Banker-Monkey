@@ -1,0 +1,34 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.cash_out_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $primary-white;
+
+  & > p {
+    width: 100%;
+  }
+
+  & > div.player_cash_out {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+
+      & > button {
+        border: thin solid $primary-purple;
+        width: 55%;
+        color: $primary-white;
+      }
+    }
+  }
+}

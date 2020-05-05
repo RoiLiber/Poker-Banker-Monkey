@@ -1,0 +1,72 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.summary_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $primary-white;
+
+  & > div:nth-child(even) {
+    //background-color: $primary-pink;
+  }
+
+  & > div.table, div.table_total {
+    width: 100%;
+    display: flex;
+    color: $primary-white;
+    font-size: 15px;
+
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: thin solid $primary-white;
+      color: $primary-white;
+      width: 100%;
+      padding: 5px;
+      background-color: $primary-purple;
+    }
+  }
+
+  & > div.table_total span {
+    background-color: $primary-gold;
+  }
+
+  & > div.player_line {
+    width: 100%;
+    display: flex;
+    color: $primary-white;
+    font-size: 25px;
+
+    & > span {
+      display: flex;
+      border: thin solid $primary-white;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      font-size: 15px;
+      margin: 5px 0;
+    }
+
+    & > span.balance {
+      color: $primary-green;
+    }
+    & > span.negative {
+      color: $alert-color;
+    }
+    & > span.cash_out {
+      background-color: $alert-color;
+    }
+  }
+  & > p {
+    font-size: 20px;
+    color: $primary-pink;
+    margin-top: 35px;
+  }
+  & > span {
+    width: 100%;
+  }
+}
