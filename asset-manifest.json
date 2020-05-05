@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.f46c7e3c.chunk.css",
-    "main.js": "/Poker-Banker-Monkey/static/js/main.04c64071.chunk.js",
-    "main.js.map": "/Poker-Banker-Monkey/static/js/main.04c64071.chunk.js.map",
-    "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
-    "runtime-main.js.map": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js.map",
-    "static/js/2.c80ebb3f.chunk.js": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js",
-    "static/js/2.c80ebb3f.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js.map",
-    "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.2b525e5578d0a613443b4d8c0a54dc7c.js": "/Poker-Banker-Monkey/precache-manifest.2b525e5578d0a613443b4d8c0a54dc7c.js",
-    "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.f46c7e3c.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.f46c7e3c.chunk.css.map",
-    "static/js/2.c80ebb3f.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js.LICENSE.txt",
-    "static/media/chip12.png": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png",
-    "static/media/gold monkey 2.png": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png",
-    "static/media/gold monkey.png": "/Poker-Banker-Monkey/static/media/gold monkey.c21354db.png"
+    "main.css": "/static/css/main.f46c7e3c.chunk.css",
+    "main.js": "/static/js/main.c6aa970c.chunk.js",
+    "main.js.map": "/static/js/main.c6aa970c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fde76c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fde76c.js.map",
+    "static/js/2.c80ebb3f.chunk.js": "/static/js/2.c80ebb3f.chunk.js",
+    "static/js/2.c80ebb3f.chunk.js.map": "/static/js/2.c80ebb3f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dd948dedf6b7cc7ec841952ebec2f59a.js": "/precache-manifest.dd948dedf6b7cc7ec841952ebec2f59a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f46c7e3c.chunk.css.map": "/static/css/main.f46c7e3c.chunk.css.map",
+    "static/js/2.c80ebb3f.chunk.js.LICENSE.txt": "/static/js/2.c80ebb3f.chunk.js.LICENSE.txt",
+    "static/media/chip12.png": "/static/media/chip12.fd6df6c1.png",
+    "static/media/gold monkey 2.png": "/static/media/gold monkey 2.efbf11f2.png",
+    "static/media/gold monkey.png": "/static/media/gold monkey.c21354db.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3696d1a.js",
+    "static/js/runtime-main.e5fde76c.js",
     "static/js/2.c80ebb3f.chunk.js",
     "static/css/main.f46c7e3c.chunk.css",
-    "static/js/main.04c64071.chunk.js"
+    "static/js/main.c6aa970c.chunk.js"
   ]
 }
