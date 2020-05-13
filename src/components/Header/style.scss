@@ -8,8 +8,7 @@ div.header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 25px;
-  font-size: 25px;
+  font-size: 17px;
   color: $primary-purple;
   border-bottom: thin solid $primary-purple;
   position: fixed;
@@ -17,18 +16,12 @@ div.header {
   z-index: 1100;
 
   & > img {
-    width: 55px;
+    width: 45px;
     position: absolute;
-    top: 8px;
     right: 25px;
   }
   & > img.monkey_logo {
-    width: 80px;
-    left: 10px;
-    top: -1px;
-  }
-
-  & > span {
-    font-size: 20px;
+    width: 70px;
+    left: 15px;
   }
 }

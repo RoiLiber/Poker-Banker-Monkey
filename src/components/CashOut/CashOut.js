@@ -12,9 +12,9 @@ export default function CashOut(props) {
     const { gameData } = props;
     const dispatch = useDispatch();
     const { playersStatusList } = gameData;
-    const [selectedPlayer, setSelectedPlayer] = useState('');
-    const [chipAmount, setChipAmount] = useState('');
     const filteredList = playersStatusList.filter(player => { return player.status === 'ACTIVE' });
+    const [selectedPlayer, setSelectedPlayer] = useState(filteredList[0].name);
+    const [chipAmount, setChipAmount] = useState('');
     const playersList = filteredList.map(player => {
         return player.name
     });
@@ -53,7 +53,7 @@ export default function CashOut(props) {
     return (
         <div className={'cash_out_wrapper'}>
             <p>Hope you have some Chips to Cash Out</p>
-            <p>Select a Player</p>
+            <span>Select a Player</span>
             <Select
                 value={selectedPlayer}
                 onChange={cashOutPlayer}

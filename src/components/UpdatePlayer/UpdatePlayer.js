@@ -12,7 +12,7 @@ export default function UpdatePlayer(props) {
     const { gameData } = props;
     const dispatch = useDispatch();
     const { playersStatusList } = gameData;
-    const [selectedPlayer, setSelectedPlayer] = useState('');
+    const [selectedPlayer, setSelectedPlayer] = useState('New Player');
     const [newPlayerName, setNewSelectedPlayerName] = useState('');
     const [buyAmount, setBuyAmount] = useState('');
     const filteredList = playersStatusList.filter(player => { return player.status === 'ACTIVE' });
@@ -22,9 +22,8 @@ export default function UpdatePlayer(props) {
 
     function selectPlayer(e) {
         const { value } = e.target;
-        const val = value === 'New Player' ? toUpper(value) : value;
 
-        setSelectedPlayer(val)
+        setSelectedPlayer(value)
     }
 
     function handleChange(e) {
@@ -75,7 +74,7 @@ export default function UpdatePlayer(props) {
     return (
         <div className={'update_player_wrapper'}>
             <p>Choose a Player to Update or Add one</p>
-            <p>Select a Player</p>
+            <span>Select a Player</span>
             <Select
                 name={'update'}
                 value={selectedPlayer}
@@ -84,8 +83,8 @@ export default function UpdatePlayer(props) {
                 defaultItem={'New Player'}
             />
             {selectedPlayer && <div className={'player_update'}>
-                {selectedPlayer === 'NEW PLAYER' && <Fade bottom>
-                    <p>Add {capitalize(selectedPlayer)} Name</p>
+                {selectedPlayer === 'New Player' && <Fade bottom>
+                    <p>Set {selectedPlayer} Name</p>
                     <Input
                         type={'text'}
                         name={'new player'}

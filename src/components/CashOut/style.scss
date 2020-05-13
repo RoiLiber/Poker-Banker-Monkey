@@ -10,6 +10,13 @@ div.cash_out_wrapper {
 
   & > p {
     width: 100%;
+    color: $primary-grey;
+    font-size: 12px;
+  }
+
+  & > span {
+    width: 100%;
+    margin: 10px;
   }
 
   & > div.player_cash_out {

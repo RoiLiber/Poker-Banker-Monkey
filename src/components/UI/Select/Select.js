@@ -46,7 +46,7 @@ export default function InputWithIcon(props) {
     const { list, onChange, value, defaultItem } = props;
 
     return (
-        <div className={'input_wrapper'}>
+        <div className={'select_wrapper'}>
             <Select
                 labelId="demo-customized-select-label"
                 id="demo-customized-select"
