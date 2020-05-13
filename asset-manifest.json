@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.1788702b.chunk.css",
-    "main.js": "/Poker-Banker-Monkey/static/js/main.36596a70.chunk.js",
-    "main.js.map": "/Poker-Banker-Monkey/static/js/main.36596a70.chunk.js.map",
+    "main.css": "/Poker-Banker-Monkey/static/css/main.04b96e1f.chunk.css",
+    "main.js": "/Poker-Banker-Monkey/static/js/main.4f982a2c.chunk.js",
+    "main.js.map": "/Poker-Banker-Monkey/static/js/main.4f982a2c.chunk.js.map",
     "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
     "runtime-main.js.map": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js.map",
     "static/js/2.0056da57.chunk.js": "/Poker-Banker-Monkey/static/js/2.0056da57.chunk.js",
     "static/js/2.0056da57.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.0056da57.chunk.js.map",
     "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.e1b8eda1cfa8dd207749166d06f18728.js": "/Poker-Banker-Monkey/precache-manifest.e1b8eda1cfa8dd207749166d06f18728.js",
+    "precache-manifest.05657b6e97806db9a4846fc3fdde4348.js": "/Poker-Banker-Monkey/precache-manifest.05657b6e97806db9a4846fc3fdde4348.js",
     "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.1788702b.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.1788702b.chunk.css.map",
+    "static/css/main.04b96e1f.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.04b96e1f.chunk.css.map",
     "static/js/2.0056da57.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.0056da57.chunk.js.LICENSE.txt",
     "static/media/chip12.png": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png",
     "static/media/gold monkey 2.png": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3696d1a.js",
     "static/js/2.0056da57.chunk.js",
-    "static/css/main.1788702b.chunk.css",
-    "static/js/main.36596a70.chunk.js"
+    "static/css/main.04b96e1f.chunk.css",
+    "static/js/main.4f982a2c.chunk.js"
   ]
 }
