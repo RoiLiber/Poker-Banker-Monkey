@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.f46c7e3c.chunk.css",
-    "main.js": "/Poker-Banker-Monkey/static/js/main.04c64071.chunk.js",
-    "main.js.map": "/Poker-Banker-Monkey/static/js/main.04c64071.chunk.js.map",
+    "main.css": "/Poker-Banker-Monkey/static/css/main.d160cf6a.chunk.css",
+    "main.js": "/Poker-Banker-Monkey/static/js/main.fa20eb73.chunk.js",
+    "main.js.map": "/Poker-Banker-Monkey/static/js/main.fa20eb73.chunk.js.map",
     "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
     "runtime-main.js.map": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js.map",
     "static/js/2.c80ebb3f.chunk.js": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js",
     "static/js/2.c80ebb3f.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js.map",
     "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.2b525e5578d0a613443b4d8c0a54dc7c.js": "/Poker-Banker-Monkey/precache-manifest.2b525e5578d0a613443b4d8c0a54dc7c.js",
+    "precache-manifest.c3c21ce6d393994d2eada67c2f2a901e.js": "/Poker-Banker-Monkey/precache-manifest.c3c21ce6d393994d2eada67c2f2a901e.js",
     "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.f46c7e3c.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.f46c7e3c.chunk.css.map",
+    "static/css/main.d160cf6a.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.d160cf6a.chunk.css.map",
     "static/js/2.c80ebb3f.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.c80ebb3f.chunk.js.LICENSE.txt",
     "static/media/chip12.png": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png",
     "static/media/gold monkey 2.png": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3696d1a.js",
     "static/js/2.c80ebb3f.chunk.js",
-    "static/css/main.f46c7e3c.chunk.css",
-    "static/js/main.04c64071.chunk.js"
+    "static/css/main.d160cf6a.chunk.css",
+    "static/js/main.fa20eb73.chunk.js"
   ]
 }
