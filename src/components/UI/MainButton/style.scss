@@ -1,0 +1,17 @@
+@import "../../../styles/colorsConfig";
+@import "../../../styles/mixins";
+
+div.button_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+
+  & > button {
+    border: thin solid $primary-purple;
+    color: $primary-white;
+    display: flex;
+    padding: 5px 20px;
+  }
+}

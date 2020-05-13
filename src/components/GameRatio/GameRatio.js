@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Button } from "@material-ui/core";
+import MainButton from "../UI/MainButton";
 import chipIcon from '../../assets/icon/chip12.png';
 import Input from '../UI/Input';
 import './style.scss';
@@ -21,6 +21,7 @@ export default function GameRatio(props) {
         setBuyInAmount('');
         setChipsAmount('');
         setRatio('');
+        setShowRatioButton(false)
     }
 
     useEffect(() => {
@@ -69,7 +70,7 @@ export default function GameRatio(props) {
             <p>or by the chips amount</p>
             <RadioGroup row className={'radio_head_line'} aria-label="gender" name="gender1" value={radio} onChange={toggleRadio}>
                 <FormControlLabel value="amount" control={<Radio checked={radio === 'amount'} />} label="Chips Amount" />
-                <FormControlLabel value="ratio" control={<Radio checked={radio === 'ratio'} />} label="Buy Ratio" labelPlacement="end"/>
+                <FormControlLabel value="ratio" control={<Radio checked={radio === 'ratio'} />} label="Ratio" labelPlacement="end"/>
             </RadioGroup>
             {radio === 'amount'
             ?   <Fade left><div className={'amount_wrapper'}>
@@ -113,12 +114,7 @@ export default function GameRatio(props) {
                     />
                 </div>}
             {ShowRatioSetButton && <Fade>
-                <Button
-                    variant="outlined"
-                    onClick={() => setGameRatio()}
-                >
-                    All In
-                </Button>
+                <MainButton name="All In" onClick={() => setGameRatio()}/>
             </Fade>}
         </div>
     )

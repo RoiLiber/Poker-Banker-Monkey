@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { Fade } from "react-reveal";
 import Input from "../UI/Input";
 import { toUpper, capitalize } from 'lodash';
-import Button from "@material-ui/core/Button";
+import MainButton from "../UI/MainButton";
 import  { setGameData, goToSummaryPage } from "../../actions/mainActions";
 import './style.scss';
 
@@ -64,11 +64,10 @@ export default function UpdatePlayer(props) {
     }
 
     function updateButton() {
-        return <Button
+        return <MainButton
+            name={newPlayerName ? `Welcome ${newPlayerName}` : `${capitalize(selectedPlayer)} is Back`}
             onClick={() => updatePlayerBuy()}
-        >
-            {newPlayerName ? `Welcome ${newPlayerName}` : `${capitalize(selectedPlayer)} is Back`}
-        </Button>
+        />
     }
 
     return (

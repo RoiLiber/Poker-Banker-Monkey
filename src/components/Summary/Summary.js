@@ -1,9 +1,13 @@
 import React from 'react';
+import MainButton from '../UI/MainButton';
+import { setNewGame } from "../../actions/mainActions";
+import { useDispatch } from "react-redux";
 import './style.scss';
 
 export default function Summary(props) {
     const { gameData } = props;
     const { gameRatio, playersStatusList } = gameData;
+    const dispatch = useDispatch();
 
     function calcTotalBuyInAmount() {
         let totalBuyInAmount = 0;
@@ -70,6 +74,7 @@ export default function Summary(props) {
             <span>Game Ratio: $1 = {gameRatio} Chips</span>
             <span>Game Buy-In Amount: ${gameData.gameBuyInAmount}</span>
             <span>Game Chips Amount: {gameData.gameChipsAmount}</span>
+            <MainButton onClick={() => dispatch(setNewGame())} name={'New Game'}/>
         </div>
     );
 }

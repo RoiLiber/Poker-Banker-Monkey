@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Fade } from 'react-reveal';
 import { useDispatch } from "react-redux";
-import { Button } from "@material-ui/core";
+import MainButton from "../UI/MainButton";
 import Input from '../UI/Input';
 import { setGameData } from "../../actions/mainActions";
 import './style.scss';
@@ -76,13 +76,7 @@ export default function GamePlayers(props) {
                 {player && <i className="far fa-plus-square" onClick={() => addPlayer()}/>}
             </div>
             {playersList.length > 1 && <Fade>
-                <Button
-                    className={'set_game'}
-                    variant="outlined"
-                    onClick={() => saveGameData()}
-                >
-                    All In
-                </Button>
+                <MainButton name="All In" onClick={() => saveGameData()}/>
             </Fade>}
         </div>
     )

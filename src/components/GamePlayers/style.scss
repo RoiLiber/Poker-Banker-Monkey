@@ -64,11 +64,4 @@ div.game_players_wrapper {
       cursor: pointer;
     }
   }
-
-  & > div button {
-    border: thin solid $primary-purple;
-    width: 150px;
-    margin: 0 15px 0 35px;
-    color: $primary-white;
-  }
 }

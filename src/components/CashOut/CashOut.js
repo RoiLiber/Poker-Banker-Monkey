@@ -3,7 +3,7 @@ import Select from "../UI/Select";
 import { useDispatch } from "react-redux";
 import { Fade } from "react-reveal";
 import Input from "../UI/Input";
-import Button from "@material-ui/core/Button";
+import MainButton from "../UI/MainButton";
 import  { setGameData, goToSummaryPage } from "../../actions/mainActions";
 import chipIcon from "../../assets/icon/chip12.png";
 import './style.scss';
@@ -71,11 +71,7 @@ export default function CashOut(props) {
                     />
                 </Fade>
                 <Fade bottom>
-                    {chipAmount && <Button
-                        onClick={() => updatePlayer()}
-                    >
-                        cash out
-                    </Button>}
+                    {chipAmount && <MainButton name={'cash Out'} onClick={() => updatePlayer()}/>}
                 </Fade>
             </div>}
         </div>

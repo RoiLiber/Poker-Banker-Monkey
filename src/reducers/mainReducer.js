@@ -23,6 +23,15 @@ const mainReducer = (state = initialState, action) => {
                 summaryPage
             };
         }
+        case actionTypes.SET_NEW_GAME: {
+            const payload = action.payload;
+
+            return {
+                ...state,
+                gameData: payload,
+                summaryPage: false
+            };
+        }
         default:
             return state;
     }

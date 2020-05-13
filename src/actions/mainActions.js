@@ -12,11 +12,21 @@ export const setGameData = obj => {
 };
 
 export const goToSummaryPage = bool => {
-
     return (dispatch) => {
         dispatch({
             type: actionTypes.GO_TO_SUMMARY_PAGE,
             payload: bool
+        })
+    }
+};
+
+export const setNewGame = () => {
+    localStorage.setItem('pokerGameData', JSON.stringify(null));
+
+    return (dispatch) => {
+        dispatch({
+            type: actionTypes.SET_NEW_GAME,
+            payload: null
         })
     }
 };
