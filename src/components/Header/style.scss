@@ -17,18 +17,18 @@ div.header {
   z-index: 1100;
 
   & > img {
-    width: 75px;
+    width: 55px;
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 25px;
   }
   & > img.monkey_logo {
-    width: 115px;
-    top: -5px;
+    width: 80px;
     left: 10px;
+    top: -1px;
   }
 
   & > span {
-    font-size: 25px;
+    font-size: 20px;
   }
 }

@@ -22,6 +22,21 @@ export default function Summary(props) {
         return totalChipsAmount
     }
 
+    function calcTotalCashRegister() {
+        const cashOutPlayersList = playersStatusList.filter(player => player.status === 'CASH_OUT');
+        const cashOutPlayersWithMoney = cashOutPlayersList.filter(player => player.playerChipsAmount !== '0');
+        let totalBuyInAmount = calcTotalBuyInAmount();
+
+        cashOutPlayersWithMoney.map(player => {
+            return totalBuyInAmount = totalBuyInAmount - calcPlayerBalance(player.playerBuyInAmount, player.playerChipsAmount)
+        });
+        return totalBuyInAmount
+    }
+
+    function calcPlayerBalance(buyInAmount, ChipsAmount) {
+       return ChipsAmount === `0` ? buyInAmount * -1 : ChipsAmount / gameRatio;
+    }
+
     return (
         <div className={'summary_wrapper'}>
             <div className={'table'}>
@@ -34,21 +49,23 @@ export default function Summary(props) {
                 const name = player.name;
                 const playerBuyInAmount = player.playerBuyInAmount;
                 const playerChipsAmount = player.playerChipsAmount;
-                const balance = playerChipsAmount === `0` ? player.playerBuyInAmount * -1 : player.playerChipsAmount / gameRatio;
                 const status = player.status;
+                const isActive = status === 'ACTIVE';
+                const balance = isActive ? '---' : calcPlayerBalance(playerBuyInAmount, playerChipsAmount);
+
 
                 return <div key={index} className={'player_line'}>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{name}</span>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>${playerBuyInAmount}</span>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{playerChipsAmount}</span>
-                    <span className={`balance ${balance < 0 && 'negative'}`}>${balance}</span>
+                    <span className={`balance ${balance < 0 && 'negative'}`}>{!isActive && '$'}{balance}</span>
                 </div>
             })}
             <div className={'table_total'}>
                 <span>Total</span>
                 <span>${calcTotalBuyInAmount()}</span>
                 <span>{calcTotalChipsAmount()}</span>
-                <span>Balance</span>
+                <span>${calcTotalCashRegister()}</span>
             </div>
             <p>Game Data</p>
             <span>Game Ratio: $1 = {gameRatio} Chips</span>

@@ -7,6 +7,7 @@ div.summary_wrapper {
   flex-wrap: wrap;
   justify-content: center;
   color: $primary-white;
+  background-color: $primary-background;
 
   & > div:nth-child(even) {
     //background-color: $primary-pink;
@@ -16,7 +17,7 @@ div.summary_wrapper {
     width: 100%;
     display: flex;
     color: $primary-white;
-    font-size: 15px;
+    font-size: 12px;
 
     & > span {
       display: flex;
@@ -38,7 +39,6 @@ div.summary_wrapper {
     width: 100%;
     display: flex;
     color: $primary-white;
-    font-size: 25px;
 
     & > span {
       display: flex;
@@ -47,7 +47,7 @@ div.summary_wrapper {
       align-items: center;
       justify-content: center;
       padding: 5px;
-      font-size: 15px;
+      font-size: 12px;
       margin: 5px 0;
     }
 
@@ -62,11 +62,12 @@ div.summary_wrapper {
     }
   }
   & > p {
-    font-size: 20px;
+    font-size: 15px;
     color: $primary-pink;
     margin-top: 35px;
   }
   & > span {
     width: 100%;
+    font-size: 12px;
   }
 }
