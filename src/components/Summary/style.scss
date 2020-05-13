@@ -27,7 +27,8 @@ div.summary_wrapper {
       color: $primary-white;
       width: 100%;
       padding: 5px;
-      background-color: $primary-purple;
+      background-color: $primary-gold;
+      margin: 5px 0;
     }
   }
 
@@ -58,7 +59,7 @@ div.summary_wrapper {
       color: $alert-color;
     }
     & > span.cash_out {
-      background-color: $alert-color;
+      border: thin solid $alert-color;
     }
   }
   & > p {

@@ -53,12 +53,11 @@ export default function Summary(props) {
                 const isActive = status === 'ACTIVE';
                 const balance = isActive ? '---' : calcPlayerBalance(playerBuyInAmount, playerChipsAmount);
 
-
                 return <div key={index} className={'player_line'}>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{name}</span>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>${playerBuyInAmount}</span>
                     <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{playerChipsAmount}</span>
-                    <span className={`balance ${balance < 0 && 'negative'}`}>{!isActive && '$'}{balance}</span>
+                    <span className={`balance ${balance < 0 && 'negative'} ${status === 'CASH_OUT' && 'cash_out'}`}>{!isActive && '$'}{balance}</span>
                 </div>
             })}
             <div className={'table_total'}>
