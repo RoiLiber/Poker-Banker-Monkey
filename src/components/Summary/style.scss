@@ -7,7 +7,6 @@ div.summary_wrapper {
   flex-wrap: wrap;
   justify-content: center;
   color: $primary-white;
-  background-color: $primary-background;
 
   & > div:nth-child(even) {
     //background-color: $primary-pink;
@@ -32,10 +31,6 @@ div.summary_wrapper {
     }
   }
 
-  & > div.table_total span {
-    background-color: $primary-gold;
-  }
-
   & > div.player_line {
     width: 100%;
     display: flex;
@@ -50,6 +45,7 @@ div.summary_wrapper {
       padding: 5px;
       font-size: 12px;
       margin: 5px 0;
+      background-color: $primary-background;
     }
 
     & > span.balance {
