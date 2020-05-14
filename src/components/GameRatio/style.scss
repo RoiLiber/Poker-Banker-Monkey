@@ -38,4 +38,11 @@ div.game_ratio_wrapper {
     width: 100%;
     padding: 30px;
   }
+
+  & > div.ratio_cards_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
 }

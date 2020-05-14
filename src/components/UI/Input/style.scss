@@ -6,12 +6,13 @@ div.input_wrapper {
   justify-content: center;
   flex-wrap: wrap;
   width: 300px;
-  margin: 10px;
+  margin: 5px;
 
   & > span.input_line {
     font-size: 12px;
+    display: flex;
     color: $primary-white;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
   }
   & > div {
