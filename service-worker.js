@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Poker-Banker-Monkey/precache-manifest.3b7bf123fe9ca7eb082cdf11a534f2d3.js"
+  "/Poker-Banker-Monkey/precache-manifest.745479df9805bf0245e04689b533023f.js"
 );
 
 self.addEventListener('message', (event) => {

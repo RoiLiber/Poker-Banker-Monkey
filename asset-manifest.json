@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.41e096a1.chunk.css",
-    "main.js": "/Poker-Banker-Monkey/static/js/main.b153c165.chunk.js",
-    "main.js.map": "/Poker-Banker-Monkey/static/js/main.b153c165.chunk.js.map",
+    "main.css": "/Poker-Banker-Monkey/static/css/main.46bd41ef.chunk.css",
+    "main.js": "/Poker-Banker-Monkey/static/js/main.4261b0be.chunk.js",
+    "main.js.map": "/Poker-Banker-Monkey/static/js/main.4261b0be.chunk.js.map",
     "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
     "runtime-main.js.map": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js.map",
-    "static/js/2.5542caad.chunk.js": "/Poker-Banker-Monkey/static/js/2.5542caad.chunk.js",
-    "static/js/2.5542caad.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.5542caad.chunk.js.map",
+    "static/js/2.b1d2c1ff.chunk.js": "/Poker-Banker-Monkey/static/js/2.b1d2c1ff.chunk.js",
+    "static/js/2.b1d2c1ff.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.b1d2c1ff.chunk.js.map",
     "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.3b7bf123fe9ca7eb082cdf11a534f2d3.js": "/Poker-Banker-Monkey/precache-manifest.3b7bf123fe9ca7eb082cdf11a534f2d3.js",
+    "precache-manifest.745479df9805bf0245e04689b533023f.js": "/Poker-Banker-Monkey/precache-manifest.745479df9805bf0245e04689b533023f.js",
     "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.41e096a1.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.41e096a1.chunk.css.map",
-    "static/js/2.5542caad.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.5542caad.chunk.js.LICENSE.txt",
+    "static/css/main.46bd41ef.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.46bd41ef.chunk.css.map",
+    "static/js/2.b1d2c1ff.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.b1d2c1ff.chunk.js.LICENSE.txt",
+    "static/media/ace.png": "/Poker-Banker-Monkey/static/media/ace.a0df250c.png",
     "static/media/chip12.png": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png",
     "static/media/gold monkey 2.png": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png",
     "static/media/gold monkey.png": "/Poker-Banker-Monkey/static/media/gold monkey.c21354db.png",
@@ -19,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d3696d1a.js",
-    "static/js/2.5542caad.chunk.js",
-    "static/css/main.41e096a1.chunk.css",
-    "static/js/main.b153c165.chunk.js"
+    "static/js/2.b1d2c1ff.chunk.js",
+    "static/css/main.46bd41ef.chunk.css",
+    "static/js/main.4261b0be.chunk.js"
   ]
 }
