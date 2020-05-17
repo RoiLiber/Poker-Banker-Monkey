@@ -5,6 +5,7 @@ import MainButton from "../UI/MainButton";
 import Input from '../UI/Input';
 import { setGameData } from "../../actions/mainActions";
 import './style.scss';
+import GameData from "../GameData";
 
 export default function GamePlayers(props) {
     const { ratioData } = props;
@@ -46,9 +47,7 @@ export default function GamePlayers(props) {
 
     return (
         <div className={'game_players_wrapper'}>
-            <span>Game Ratio: $1 = {ratioData.gameRatio} Chips</span>
-            <span>Game Buy-In Amount: ${ratioData.gameBuyInAmount}</span>
-            <span>Game Chips Amount: {ratioData.gameChipsAmount}</span>
+            <GameData ratioData={ratioData}/>
             <p>Set the Players Names</p>
             {playersList.length > 0 && <Fragment>
                 <Fade left><span>Players list</span></Fade>

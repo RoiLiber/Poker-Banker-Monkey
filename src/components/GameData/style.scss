@@ -1,0 +1,22 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.game_data_wrapper {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+
+  & > p {
+    font-size: 15px;
+    color: $primary-gold;
+  }
+
+  & > span {
+    display: flex;
+    justify-content: center;
+    color: $primary-white;
+    margin: 15px;
+    font-size: 12px;
+  }
+}

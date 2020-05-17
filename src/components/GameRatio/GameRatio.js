@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Fade } from 'react-reveal';
 import MainButton from "../UI/MainButton";
 import chipIcon from '../../assets/icon/chip12.png';
 import Input from '../UI/Input';
@@ -84,7 +83,7 @@ export default function GameRatio(props) {
                     cardInputs={
                         <div className={'card_inputs'}>
                             <Input
-                                type={'text'}
+                                type={'number'}
                                 placeholder={'set amount'}
                                 name={'setBuyInAmount'}
                                 value={buyInAmount}
@@ -93,7 +92,7 @@ export default function GameRatio(props) {
                                 onChange={handleChange}
                             />
                             <Input
-                                type={'text'}
+                                type={'number'}
                                 placeholder={'set amount'}
                                 name={'setChipsAmount'}
                                 value={chipsAmount}
@@ -119,7 +118,7 @@ export default function GameRatio(props) {
                     cardInputs={
                         <div className={'card_inputs'}>
                             <Input
-                                type={'text'}
+                                type={'number'}
                                 placeholder={'set amount'}
                                 name={'setBuyInAmount'}
                                 value={buyInAmount}
@@ -128,7 +127,7 @@ export default function GameRatio(props) {
                                 onChange={handleChange}
                             />
                             <Input
-                                type={'text'}
+                                type={'number'}
                                 placeholder={'set chips ratio'}
                                 name={'setRatio'}
                                 value={ratio}
