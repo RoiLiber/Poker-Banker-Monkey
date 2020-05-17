@@ -11,7 +11,7 @@ export default function Card(props) {
         <div className={`card_wrapper ${selected && 'selected'}`} onClick={() => onClick(type)}>
             <img src={name === 'ace' ? ace : king}/>
             {children}
-            {selected && <Fade bottom deley={1500}>{cardInputs}</Fade>}
+            {selected && <Fade deley={1500}>{cardInputs}</Fade>}
         </div>
     )
 }

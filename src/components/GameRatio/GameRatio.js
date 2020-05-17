@@ -43,6 +43,10 @@ export default function GameRatio(props) {
     function handleChange(e) {
         const { name, value } = e.target;
 
+        if (!value) {
+            setShowRatioButton(false)
+        }
+
         switch (name) {
             case 'setBuyInAmount': {
                 setBuyInAmount(value);
@@ -100,6 +104,7 @@ export default function GameRatio(props) {
                         </div>
                     }
                 />
+                {!ShowRatioSetButton && <p>OR</p>}
                 {ShowRatioSetButton && <MainButton name="All In" onClick={() => setGameRatio()}/>}
                 <Card
                     name={'king'}
