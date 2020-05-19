@@ -30,39 +30,34 @@ function Header(props) {
             <img alt={'monkey logo'} src={monkeyLogo} className={'monkey_logo'}/>
             <span>Poker Monkeys</span>
             <img alt={'monkey logo'} src={logoMonkey}/>
-            <Slide left duration={1500}>
-                {gameData !== null && <div className={'live_game_nav'}>
-                    <div className={'game_nav'}>
-                        <Link to={ROUTES.liveGame}>
-                            <Button onClick={() => summaryPage(false)}>Manage</Button>
-                        </Link>
-                        <Link to={ROUTES.liveGame}>
-                            <Button onClick={() => summaryPage(true)}>summary</Button>
-                        </Link>
-                    </div>
+            {gameData !== null && <div className={'live_game_nav'}>
+                <div className={'game_nav'}>
                     <Link to={ROUTES.liveGame}>
-                        <span onClick={() => summaryPage(true)}>Live Game</span>
+                        <Button onClick={() => summaryPage(false)}>Manage</Button>
                     </Link>
-                </div>}
-            </Slide>
-            <Fade top>
+                    <Link to={ROUTES.liveGame}>
+                        <Button onClick={() => summaryPage(true)}>summary</Button>
+                    </Link>
+                </div>
+                <Link to={ROUTES.liveGame}>
+                    <span onClick={() => summaryPage(true)}>Live Game</span>
+                </Link>
+            </div>}
+            <div className={'game_menu_nav_wrapper'}>
+                <i
+                    className={`fas ${isMenuOpen ? 'fa-chevron-up': 'fa-chevron-down'}`}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                />
                 {isMenuOpen && <div className={'game_menu'}>
-                    {isMenuOpen && <i
-                        className={`fas fa-chevron-up`}
-                        onClick={() => setIsMenuOpen(false)}
-                    />}
                     <Link to={ROUTES.profile}>
                         <Button onClick={() => setIsMenuOpen(false)}>Profile</Button>
                     </Link>
                     <Link to={ROUTES.newGame}>
                         <Button onClick={() => newGame()}>New Game</Button>
                     </Link>
-                </div>}
-            </Fade>
-            {!isMenuOpen && <i
-                className={`fas fa-chevron-down`}
-                onClick={() => setIsMenuOpen(true)}
-            />}
+            </div>}
+                <span/>
+            </div>
         </div>
     )
 }

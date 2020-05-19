@@ -4,13 +4,10 @@
 div.header {
   width: 100%;
   min-height: 10vh;
-  background-color: $primary-background;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   color: $primary-gold;
-  border-bottom: thin solid $primary-gold;
   position: fixed;
   top: 0;
   z-index: 1100;
@@ -22,6 +19,8 @@ div.header {
     align-items: center;
     justify-content: center;
     font-size: 17px;
+    border-bottom: thin solid $primary-gold;
+    background-color: $primary-background;
   }
 
   & > img {
@@ -43,9 +42,11 @@ div.header {
     width: 100%;
     background-color: $primary-background;
     border-top: thin solid $primary-gold;
+    border-bottom: thin solid $primary-gold;
 
     & > div.game_nav {
       display: flex;
+      width: 50%;
 
       & > a {
         text-decoration: none;
@@ -68,35 +69,38 @@ div.header {
     }
   }
 
-  & > div.game_menu {
+  & > div.game_menu_nav_wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-top: thin solid $primary-gold;
     width: 100%;
+    background-color: $primary-background;
+    border-bottom: thin solid $primary-gold;
+    position: relative;
 
     & > i {
       font-size: 25px;
-      width: 100%;
-      margin: 10px 0 5px 0;
+      display: flex;
+      padding: 5px 35px;
+      position: absolute;
+      right: 0;
     }
 
-    & > a {
-      text-decoration: none;
-      width: 300px;
+    & > div.game_menu {
+      display: flex;
+      width: 100%;
+      padding: 5px 10px;
 
-      & > button {
-        width: 300px;
-        background-color: $primary-background;
-        color: $primary-white;
-        border-radius: 0;
-        border-top: thin solid $primary-gold;
+      & > a {
+        text-decoration: none;
+
+        & > button {
+          font-size: 12px;
+          color: $primary-white;
+          padding: 0 10px;
+        }
+      }
+      & > a:first-child {
+        border-right: thin solid $primary-white;
       }
     }
-  }
-  & > i {
-    font-size: 25px;
-    position: absolute;
-    bottom: -35px;
   }
 }
