@@ -1,5 +1,5 @@
-@import "../../../styles/colorsConfig";
-@import "../../../styles/mixins";
+@import "../../../../styles/colorsConfig";
+@import "../../../../styles/mixins";
 
 div.button_wrapper {
   display: flex;
@@ -9,7 +9,8 @@ div.button_wrapper {
   padding: 10px;
 
   & > div button {
-    border: thin solid $primary-purple;
+    border: thin solid $primary-gold;
+    background-color: $primary-background;
     color: $primary-white;
     display: flex;
     padding: 5px 20px;

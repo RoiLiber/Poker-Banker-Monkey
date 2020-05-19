@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import MainButton from "../UI/MainButton";
+import MainButton from "../UI/Buttons/MainButton";
 import chipIcon from '../../assets/icon/chip12.png';
 import Input from '../UI/Input';
-import Card from "../UI/Card";
+import Card from "../Card";
 import './style.scss';
 
 export default function GameRatio(props) {

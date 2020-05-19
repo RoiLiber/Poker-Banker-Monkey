@@ -5,66 +5,73 @@ div.summary_wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   color: $primary-white;
+  min-height: 75vh;
 
-  & > div:nth-child(even) {
-    //background-color: $primary-pink;
-  }
-
-  & > div.table, div.table_total {
+  & > div.table {
     width: 100%;
     display: flex;
-    color: $primary-white;
-    font-size: 12px;
+    flex-wrap: wrap;
 
-    & > span {
+    & > div.table_head, div.table_total {
+      width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border: thin solid $primary-white;
       color: $primary-white;
-      width: 100%;
-      padding: 5px;
-      background-color: $primary-gold;
-      margin: 5px 0;
-    }
-  }
-
-  & > div.player_line {
-    width: 100%;
-    display: flex;
-    color: $primary-white;
-
-    & > span {
-      display: flex;
-      border: thin solid $primary-white;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      padding: 5px;
       font-size: 12px;
-      margin: 5px 0;
-      background-color: $primary-background;
+
+      & > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: thin solid $primary-white;
+        color: $primary-white;
+        width: 100%;
+        padding: 5px;
+        background-color: $primary-gold;
+        margin: 5px 0;
+      }
     }
 
-    & > span.balance {
-      color: $primary-green;
+    & > div.player_line {
+      width: 100%;
+      display: flex;
+      color: $primary-white;
+
+      & > span {
+        display: flex;
+        border: thin solid $primary-white;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 12px;
+        margin: 5px 0;
+        background-color: $primary-background;
+      }
+
+      & > span.balance {
+        color: $primary-green;
+      }
+      & > span.negative {
+        color: $alert-color;
+      }
+      & > span.cash_out {
+        border: thin solid $alert-color;
+      }
     }
-    & > span.negative {
-      color: $alert-color;
+    & > p {
+      font-size: 15px;
+      color: $primary-pink;
+      margin-top: 35px;
     }
-    & > span.cash_out {
-      border: thin solid $alert-color;
+    & > span {
+      width: 100%;
+      font-size: 12px;
     }
   }
-  & > p {
-    font-size: 15px;
-    color: $primary-pink;
-    margin-top: 35px;
-  }
-  & > span {
-    width: 100%;
-    font-size: 12px;
-  }
+
+
 }

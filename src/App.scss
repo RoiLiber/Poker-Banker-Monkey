@@ -1,10 +1,13 @@
 @import "./styles/colorsConfig";
 
-.App {
+div.App {
   text-align: center;
   display: flex;
+  height: 100vh;
+  overflow: scroll;
   background-image: url("./assets/img/poker felt blue.jpg");
   background-size: 100% 100%;
+  border-bottom: thin solid $primary-gold;
 }
 
 * {

@@ -1,0 +1,13 @@
+@import "../../../../styles/colorsConfig";
+@import "../../../../styles/mixins";
+
+div.text_button_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+
+  & > button {
+    color: $primary-background;
+    display: flex;
+  }
+}

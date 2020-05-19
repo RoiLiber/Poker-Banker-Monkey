@@ -1,13 +1,16 @@
 import React, { useState, Fragment } from 'react';
+import { compose } from 'redux';
 import { Fade } from 'react-reveal';
 import { useDispatch } from "react-redux";
-import MainButton from "../UI/MainButton";
+import MainButton from "../UI/Buttons/MainButton";
 import Input from '../UI/Input';
 import { setGameData } from "../../actions/mainActions";
 import './style.scss';
 import GameData from "../GameData";
+import { Link, withRouter } from 'react-router-dom';
+import { ROUTES } from '../../consts';
 
-export default function GamePlayers(props) {
+function GamePlayers(props) {
     const { ratioData } = props;
     const dispatch = useDispatch();
     const [playersList, setPlayersList] = useState([]);
@@ -28,6 +31,7 @@ export default function GamePlayers(props) {
         const gameRatio = ratioData.gameRatio;
         const gameBuyInAmount = ratioData.gameBuyInAmount;
         const gameChipsAmount = ratioData.gameChipsAmount;
+
         const playersStatusList = playersList.map(name => {
             return {
                 name,
@@ -74,9 +78,12 @@ export default function GamePlayers(props) {
                 />
                 {player && <i className="far fa-plus-square" onClick={() => addPlayer()}/>}
             </div>
-            {playersList.length > 1 && <Fade>
-                <MainButton name="All In" onClick={() => saveGameData()}/>
-            </Fade>}
+
+            {playersList.length > 1 && <Link to={ROUTES.liveGame}>
+                <Fade><MainButton name="All In" onClick={() => saveGameData()}/></Fade>
+            </Link>}
         </div>
     )
 }
+
+export default compose(withRouter)(GamePlayers)

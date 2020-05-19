@@ -1,6 +1,6 @@
 import React from 'react';
-import king from '../../../assets/img/king.jpg';
-import ace from '../../../assets/img/ace.png';
+import king from '../../assets/img/king.jpg';
+import ace from '../../assets/img/ace.png';
 import { Fade } from 'react-reveal';
 import './style.scss';
 

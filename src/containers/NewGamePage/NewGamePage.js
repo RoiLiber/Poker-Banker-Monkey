@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import GameRatio from "../GameRatio";
-import GamePlayers from "../GamePlayers";
+import GameRatio from "../../components/GameRatio";
+import GamePlayers from "../../components/GamePlayers";
 import './style.scss';
 
-export default function Home() {
+export default function NewGamePage() {
     const [ratioData, setRatioData] = useState();
 
     function saveGameRatio(ratioConfig) {
@@ -11,7 +11,7 @@ export default function Home() {
     }
 
     return (
-        <div className={'home'}>
+        <div className={'new_game_wrapper'}>
             {!ratioData
             ?   <GameRatio saveGameRatio={saveGameRatio}/>
             :   <GamePlayers ratioData={ratioData}/>}

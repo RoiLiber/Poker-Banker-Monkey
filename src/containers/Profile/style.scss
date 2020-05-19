@@ -1,0 +1,15 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.profile_wrapper {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20vh;
+
+  & > div {
+    font-size: 25px;
+    color: $primary-gold;
+  }
+}
+
+

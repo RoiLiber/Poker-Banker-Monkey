@@ -3,7 +3,7 @@ import Select from "../UI/Select";
 import { useDispatch } from "react-redux";
 import { Fade } from "react-reveal";
 import Input from "../UI/Input";
-import MainButton from "../UI/MainButton";
+import MainButton from "../UI/Buttons/MainButton";
 import  { setGameData, goToSummaryPage } from "../../actions/mainActions";
 import chipIcon from "../../assets/icon/chip12.png";
 import './style.scss';

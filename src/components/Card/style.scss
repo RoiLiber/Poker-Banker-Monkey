@@ -1,5 +1,5 @@
-@import "../../../styles/colorsConfig";
-@import "../../../styles/mixins";
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
 
 div.card_wrapper {
   display: flex;
@@ -29,7 +29,7 @@ div.card_wrapper {
     justify-content: center;
     align-items: center;
     color: $primary-gold;
-    z-index: 1100;
+    z-index: 500;
     font-size: 15px;
   }
 }

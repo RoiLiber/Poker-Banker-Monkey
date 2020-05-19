@@ -2,7 +2,7 @@ import * as actionTypes from "../actions/actionTypes";
 
 const initialState = {
     gameData: null,
-    summaryPage: false
+    summaryPage: true
 };
 
 const mainReducer = (state = initialState, action) => {
@@ -29,7 +29,7 @@ const mainReducer = (state = initialState, action) => {
             return {
                 ...state,
                 gameData: payload,
-                summaryPage: false
+                summaryPage: true
             };
         }
         default:

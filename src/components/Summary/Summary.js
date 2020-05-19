@@ -1,14 +1,10 @@
 import React from 'react';
-import MainButton from '../UI/MainButton';
-import { setNewGame } from "../../actions/mainActions";
-import { useDispatch } from "react-redux";
 import GameData from "../GameData";
 import './style.scss';
 
 export default function Summary(props) {
     const { gameData } = props;
     const { gameRatio, playersStatusList } = gameData;
-    const dispatch = useDispatch();
 
     function calcTotalBuyInAmount() {
         let totalBuyInAmount = 0;
@@ -45,34 +41,35 @@ export default function Summary(props) {
     return (
         <div className={'summary_wrapper'}>
             <div className={'table'}>
-                <span>Name</span>
-                <span>Buy-In Amount</span>
-                <span>Chips Amount</span>
-                <span>Balance</span>
-            </div>
-            {playersStatusList.map((player, index) => {
-                const name = player.name;
-                const playerBuyInAmount = player.playerBuyInAmount;
-                const playerChipsAmount = player.playerChipsAmount;
-                const status = player.status;
-                const isActive = status === 'ACTIVE';
-                const balance = isActive ? '---' : calcPlayerBalance(playerBuyInAmount, playerChipsAmount);
-
-                return <div key={index} className={'player_line'}>
-                    <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{name}</span>
-                    <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>${playerBuyInAmount}</span>
-                    <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{playerChipsAmount}</span>
-                    <span className={`balance ${balance < 0 && 'negative'} ${status === 'CASH_OUT' && 'cash_out'}`}>{!isActive && '$'}{balance}</span>
+                <div className={'table_head'}>
+                    <span>Name</span>
+                    <span>Buy-In Amount</span>
+                    <span>Chips Amount</span>
+                    <span>Balance</span>
                 </div>
-            })}
-            <div className={'table_total'}>
-                <span>Total</span>
-                <span>${calcTotalBuyInAmount()}</span>
-                <span>{calcTotalChipsAmount()}</span>
-                <span>${calcTotalCashRegister()}</span>
+                {playersStatusList.map((player, index) => {
+                    const name = player.name;
+                    const playerBuyInAmount = player.playerBuyInAmount;
+                    const playerChipsAmount = player.playerChipsAmount;
+                    const status = player.status;
+                    const isActive = status === 'ACTIVE';
+                    const balance = isActive ? '---' : calcPlayerBalance(playerBuyInAmount, playerChipsAmount);
+
+                    return <div key={index} className={'player_line'}>
+                        <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{name}</span>
+                        <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>${playerBuyInAmount}</span>
+                        <span className={`${status === 'CASH_OUT' && 'cash_out'}`}>{playerChipsAmount}</span>
+                        <span className={`balance ${balance < 0 && 'negative'} ${status === 'CASH_OUT' && 'cash_out'}`}>{!isActive && '$'}{balance}</span>
+                    </div>
+                })}
+                <div className={'table_total'}>
+                    <span>Total</span>
+                    <span>${calcTotalBuyInAmount()}</span>
+                    <span>{calcTotalChipsAmount()}</span>
+                    <span>${calcTotalCashRegister()}</span>
+                </div>
             </div>
             <GameData ratioData={gameRatio}/>
-            <MainButton onClick={() => dispatch(setNewGame())} name={'New Game'}/>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 const ROUTES = {
-  home: '/home',
-  gamePage: '/game',
+  profile: '/profile',
+  liveGame: '/live-game',
+  newGame: '/new-game'
 };
 
 export {

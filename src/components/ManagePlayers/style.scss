@@ -1,28 +1,35 @@
 @import "../../styles/colorsConfig";
 @import "../../styles/mixins";
 
-div.update_players_wrapper {
+div.manage_players_wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   color: $primary-white;
 
-  & > div.update_players_nav {
-    width: 70%;
-    margin-bottom: 50px;
+  & > div.manage_players_nav {
+    display: flex;
+    margin-bottom: 30px;
 
     & > div {
-      width: 90%;
+      width: 100%;
 
       & > button {
-        width: 50%;
+        display: flex;
+        padding: 5px 35px;
         color: $primary-background;
         font-weight: bold;
         font-size: 12px;
+        border: thin solid $primary-gold;
       }
       & > button.selected {
         background-color: $primary-green;
+        font-size: 12px;
+      }
+      & > button.not_selected {
+        background-color: $primary-background;
+        color: $primary-white;
       }
     }
   }

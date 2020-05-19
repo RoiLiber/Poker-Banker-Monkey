@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { Fade } from "react-reveal";
 import Input from "../UI/Input";
 import { toUpper, capitalize } from 'lodash';
-import MainButton from "../UI/MainButton";
+import MainButton from "../UI/Buttons/MainButton";
 import  { setGameData, goToSummaryPage } from "../../actions/mainActions";
 import './style.scss';
 

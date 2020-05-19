@@ -6,13 +6,13 @@ import UpdatePlayer from "../UpdatePlayer";
 import { Fade } from "react-reveal";
 import './style.scss';
 
-export default function PlayersUpdate(props) {
+export default function ManagePlayers(props) {
     const { gameData } = props;
     const [cashOut, setCashOut] = useState(false);
 
     return (
-        <div className={'update_players_wrapper'}>
-            <div className={'update_players_nav'}>
+        <div className={'manage_players_wrapper'}>
+            <div className={'manage_players_nav'}>
                 <ButtonGroup disableElevation variant="contained" color="primary">
                     <Button
                         className={`${!cashOut ? 'selected' : 'not_selected'}`}
