@@ -40,6 +40,7 @@ function Header(props) {
                     </Link>
                 </div>
                 <Link to={ROUTES.liveGame}>
+                    <span className="pulse"/>
                     <span onClick={() => summaryPage(true)}>Live Game</span>
                 </Link>
             </div>}
