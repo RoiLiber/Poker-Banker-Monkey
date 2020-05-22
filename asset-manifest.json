@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.ae46b509.chunk.css",
+    "main.css": "/Poker-Banker-Monkey/static/css/main.d32c1d16.chunk.css",
     "main.js": "/Poker-Banker-Monkey/static/js/main.4370415a.chunk.js",
     "main.js.map": "/Poker-Banker-Monkey/static/js/main.4370415a.chunk.js.map",
     "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
@@ -8,20 +8,20 @@
     "static/js/2.9bc655be.chunk.js": "/Poker-Banker-Monkey/static/js/2.9bc655be.chunk.js",
     "static/js/2.9bc655be.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.9bc655be.chunk.js.map",
     "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.32d1a42b4ec9c435e02ebb9aeb1b4258.js": "/Poker-Banker-Monkey/precache-manifest.32d1a42b4ec9c435e02ebb9aeb1b4258.js",
+    "precache-manifest.a6e5a2e2a3f2946f4d9f41b811130cd6.js": "/Poker-Banker-Monkey/precache-manifest.a6e5a2e2a3f2946f4d9f41b811130cd6.js",
     "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.ae46b509.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.ae46b509.chunk.css.map",
+    "static/css/main.d32c1d16.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.d32c1d16.chunk.css.map",
     "static/js/2.9bc655be.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.9bc655be.chunk.js.LICENSE.txt",
     "static/media/ace.png": "/Poker-Banker-Monkey/static/media/ace.a0df250c.png",
     "static/media/chip12.png": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png",
     "static/media/gold monkey 2.png": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png",
     "static/media/gold monkey.png": "/Poker-Banker-Monkey/static/media/gold monkey.be5f0bc0.png",
-    "static/media/App.scss": "/Poker-Banker-Monkey/static/media/poker felt blue.550cebd1.jpg"
+    "static/media/App.scss": "/Poker-Banker-Monkey/static/media/poker-back1.9041629e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d3696d1a.js",
     "static/js/2.9bc655be.chunk.js",
-    "static/css/main.ae46b509.chunk.css",
+    "static/css/main.d32c1d16.chunk.css",
     "static/js/main.4370415a.chunk.js"
   ]
 }
