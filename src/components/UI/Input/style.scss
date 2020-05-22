@@ -13,9 +13,7 @@ div.input_wrapper {
     display: flex;
     color: $primary-white;
     margin: 5px 0;
+    padding-left: 7px;
     width: 100%;
-  }
-  & > div {
-    color: $primary-green;
   }
 }

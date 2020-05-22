@@ -36,14 +36,15 @@ div.game_players_wrapper {
       justify-content: center;
 
       & > span {
-        margin-right: 15px;
-        color: $primary-grey;
+        color: $primary-green;
       }
       & > i {
-        margin-right: 10px;
+        margin: 0 5px;
         display: flex;
         align-items: center;
         color: $primary-white;
+        position: relative;
+        bottom: 2px;
       }
     }
   }

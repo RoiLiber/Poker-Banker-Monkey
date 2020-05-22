@@ -78,7 +78,6 @@ function GamePlayers(props) {
                 />
                 {player && <i className="far fa-plus-square" onClick={() => addPlayer()}/>}
             </div>
-
             {playersList.length > 1 && <Link to={ROUTES.liveGame}>
                 <Fade><MainButton name="All In" onClick={() => saveGameData()}/></Fade>
             </Link>}

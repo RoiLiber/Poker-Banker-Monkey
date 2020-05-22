@@ -21,6 +21,7 @@ div.header {
     font-size: 17px;
     border-bottom: thin solid $primary-gold;
     background-color: $primary-background;
+    z-index: 900;
   }
 
   & > img {
@@ -28,28 +29,45 @@ div.header {
     position: absolute;
     right: 20px;
     top: 10px;
+    z-index: 1000;
   }
   & > img.monkey_logo {
     width: 65px;
     left: 20px;
+    z-index: 1000;
   }
 
   & > div.live_game_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
     width: 100%;
     background-color: $primary-background;
-    border-top: thin solid $primary-gold;
     border-bottom: thin solid $primary-gold;
+    z-index: 800;
+    position: relative;
+    padding: 5px 15px;
+
+    & > span.nav_animation {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      animation: live-animation 2s linear infinite;
+      border-radius: 0 2px 2px 0;
+      background: linear-gradient(75deg,
+              rgba($primary-green, 0.7),
+              rgba($primary-green, 0.5),
+              rgba($primary-green, 0.3),
+              rgba($primary-white, 0.5),
+              rgba($primary-white, 0.2));
+    }
 
     & > div.game_nav {
       display: flex;
       width: 50%;
 
       & > a {
-        text-decoration: none;
+        //text-decoration: none;
 
         & > button {
           font-size: 12px;
@@ -69,13 +87,13 @@ div.header {
 
       & > span {
         font-size: 15px;
-        color: $primary-green;
+        color: $primary-gold;
         font-weight: bold;
       }
       & > span.pulse {
-        height: 10px;
+        height: 7px;
         margin: 0 7px;
-        width: 10px;
+        width: 7px;
         position: relative;
         transition: 0.2s ease-in-out;
 
@@ -103,29 +121,28 @@ div.header {
         }
       }
     }
-
-
   }
 
   & > div.game_menu_nav_wrapper {
     display: flex;
     width: 100%;
-    background-color: $primary-background;
-    border-bottom: thin solid $primary-gold;
     position: relative;
 
     & > i {
       font-size: 25px;
       display: flex;
-      padding: 5px 35px;
+      padding: 5px;
       position: absolute;
-      right: 0;
+      left: 0;
+      z-index: 1100;
     }
 
     & > div.game_menu {
       display: flex;
       width: 100%;
-      padding: 5px 10px;
+      padding: 5px 15px;
+      border-bottom: thin solid $primary-gold;
+      background-color: $primary-background;
 
       & > a {
         text-decoration: none;
@@ -155,5 +172,14 @@ div.header {
   100% {
     opacity: 0;
     transform: scale(1)
+  }
+}
+
+@keyframes live-animation {
+  0% {
+    width: 5px;
+  }
+  100% {
+    width: 100%;
   }
 }
