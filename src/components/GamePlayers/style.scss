@@ -33,9 +33,10 @@ div.game_players_wrapper {
       width: 100%;
       margin: 5px 0;
       display: flex;
-      justify-content: center;
+      padding-left: calc( 50% - 35px);
 
       & > span {
+        margin-right: 2px;
         color: $primary-green;
       }
       & > i {
