@@ -2,7 +2,8 @@
 @import "../../styles/mixins";
 
 div.new_game_wrapper {
-  padding: 15vh 20px 0 20px;
+  padding: 20vh 20px 10vh 20px;
+  overflow: auto;
   width: 100%;
   min-height: 75vh;
 }

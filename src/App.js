@@ -15,8 +15,6 @@ export default function App() {
     const gameDataFetched = JSON.parse(gameDataFetch);
     const gameData = useSelector(state => state.mainReducer.gameData);
 
-    console.log('me again')
-
     useEffect(() => {
         if (gameDataFetched) {
             dispatch(setGameData(gameDataFetched));

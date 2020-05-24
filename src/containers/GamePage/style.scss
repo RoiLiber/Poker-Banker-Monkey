@@ -3,8 +3,8 @@
 
 div.game_page_wrapper {
   width: 100%;
-  padding: 20px;
-  margin-top: 20vh;
+  padding: 20vh 20px 10vh 20px;
+  overflow: auto;
 
   //& > div.game_page_nav {
   //  width: 100%;

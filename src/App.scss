@@ -4,6 +4,8 @@ div.App {
   text-align: center;
   display: flex;
   height: 100vh;
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   background-image: url("./assets/img/poker-back1.jpg");
   background-size: 100% 100%;
