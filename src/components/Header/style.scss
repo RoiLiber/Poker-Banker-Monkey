@@ -135,6 +135,12 @@ div.header {
       position: absolute;
       left: 0;
       z-index: 1100;
+      transition: 0.5s ease-in-out;
+    }
+
+    & > i.icon_rotate {
+      animation: menu-icon-animation 2.2s ease-in both;
+      color: $primary-white;
     }
 
     & > div.game_menu {
@@ -181,5 +187,14 @@ div.header {
   }
   100% {
     width: 100%;
+  }
+}
+
+@keyframes menu-icon-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
   }
 }

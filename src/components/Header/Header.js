@@ -13,7 +13,6 @@ import { compose } from "redux";
 function Header(props) {
     const { gameData } = props;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [toggleArrow, setToggleArrow] = useState(false);
     const dispatch = useDispatch();
 
     function newGame() {
@@ -26,12 +25,6 @@ function Header(props) {
         dispatch(goToSummaryPage(bool))
     }
 
-    function menuButtonClick() {
-        setTimeout(() => {
-            setToggleArrow(!toggleArrow)
-        }, isMenuOpen ? 200 : 3500);
-        setIsMenuOpen(!isMenuOpen)
-    }
     return (
         <div className={'header'}>
             <img alt={'monkey logo'} src={monkeyLogo} className={'monkey_logo'}/>
@@ -55,10 +48,10 @@ function Header(props) {
                 </div>}
             </Slide>
             <div className={'game_menu_nav_wrapper'}>
-                <Slide left><i
-                    className={`fas ${toggleArrow ? 'fa-chevron-left': 'fa-chevron-right'}`}
-                    onClick={() => menuButtonClick()}
-                /></Slide>
+                <i
+                    className={`fas fa-chevron-right ${isMenuOpen && 'icon_rotate'}`}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                />
                 {isMenuOpen && <Slide left duration={2500}><div className={'game_menu'}>
                     <Link to={ROUTES.profile}>
                         <Button onClick={() => setIsMenuOpen(false)}>Profile</Button>
