@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d1ab564e0f62d878716a0ac567b3464",
+    "revision": "17722eb7bc8c6ca955d2d0328f885cf3",
     "url": "/Poker-Banker-Monkey/index.html"
   },
   {
-    "revision": "ed0d77da1c73c6c18002",
-    "url": "/Poker-Banker-Monkey/static/css/main.06217a44.chunk.css"
+    "revision": "16eaef7809bf974a602c",
+    "url": "/Poker-Banker-Monkey/static/css/main.4dacd698.chunk.css"
   },
   {
     "revision": "c2ee54800d52bc80eb14",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed0d77da1c73c6c18002",
+    "revision": "16eaef7809bf974a602c",
     "url": "/Poker-Banker-Monkey/static/js/main.eb756f7b.chunk.js"
   },
   {

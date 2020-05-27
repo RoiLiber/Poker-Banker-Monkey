@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Poker-Banker-Monkey/static/css/main.06217a44.chunk.css",
+    "main.css": "/Poker-Banker-Monkey/static/css/main.4dacd698.chunk.css",
     "main.js": "/Poker-Banker-Monkey/static/js/main.eb756f7b.chunk.js",
     "main.js.map": "/Poker-Banker-Monkey/static/js/main.eb756f7b.chunk.js.map",
     "runtime-main.js": "/Poker-Banker-Monkey/static/js/runtime-main.d3696d1a.js",
@@ -8,9 +8,9 @@
     "static/js/2.7fea2494.chunk.js": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js",
     "static/js/2.7fea2494.chunk.js.map": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js.map",
     "index.html": "/Poker-Banker-Monkey/index.html",
-    "precache-manifest.7fbfe80136a357187e43a465a85ae45d.js": "/Poker-Banker-Monkey/precache-manifest.7fbfe80136a357187e43a465a85ae45d.js",
+    "precache-manifest.62daa67b3389a5a7c0951f47fbd61cfa.js": "/Poker-Banker-Monkey/precache-manifest.62daa67b3389a5a7c0951f47fbd61cfa.js",
     "service-worker.js": "/Poker-Banker-Monkey/service-worker.js",
-    "static/css/main.06217a44.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.06217a44.chunk.css.map",
+    "static/css/main.4dacd698.chunk.css.map": "/Poker-Banker-Monkey/static/css/main.4dacd698.chunk.css.map",
     "static/js/2.7fea2494.chunk.js.LICENSE.txt": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js.LICENSE.txt",
     "static/media/ace.png": "/Poker-Banker-Monkey/static/media/ace.a0df250c.png",
     "static/media/chipIcon.png": "/Poker-Banker-Monkey/static/media/chipIcon.c4825c14.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3696d1a.js",
     "static/js/2.7fea2494.chunk.js",
-    "static/css/main.06217a44.chunk.css",
+    "static/css/main.4dacd698.chunk.css",
     "static/js/main.eb756f7b.chunk.js"
   ]
 }
