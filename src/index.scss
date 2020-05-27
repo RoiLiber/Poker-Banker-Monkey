@@ -9,11 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  & > div.MuiPopover-root div ul{
-    background-color: $primary-background;
-    border: thin solid $primary-pink;
-    color: $primary-white;
-  }
+  background-color: $primary-black;
 }
 
 code {
