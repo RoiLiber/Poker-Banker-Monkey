@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import monkeyLogo from '../../assets/icon/gold monkey.png';
 import logoMonkey from '../../assets/icon/gold monkey 2.png';
 import Button from '@material-ui/core/Button';

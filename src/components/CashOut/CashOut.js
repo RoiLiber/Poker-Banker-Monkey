@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 import Input from "../UI/Input";
 import MainButton from "../UI/Buttons/MainButton";
 import  { setGameData, goToSummaryPage } from "../../actions/mainActions";
-import chipIcon from "../../assets/icon/chip12.png";
+import chipIcon from "../../assets/icon/chipIcon.png";
 import './style.scss';
 
 export default function CashOut(props) {
@@ -66,7 +66,7 @@ export default function CashOut(props) {
                         type={'text'}
                         placeholder={'Chip Amount'}
                         value={chipAmount}
-                        icon={<img alt={'chip icon'} style={{ width: '20px' }} src={chipIcon}/>}
+                        icon={<img alt={'chip icon'} style={{ width: '15px' }} src={chipIcon}/>}
                         onChange={handleChange}
                     />
                 </Fade>

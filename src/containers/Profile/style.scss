@@ -4,7 +4,7 @@
 div.profile_wrapper {
   width: 100%;
   padding: 20vh 20px 10vh 20px;
-  overflow: auto;
+  z-index: 500;
 
   & > div {
     font-size: 25px;

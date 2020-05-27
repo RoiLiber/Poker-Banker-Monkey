@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MainButton from "../UI/Buttons/MainButton";
-import chipIcon from '../../assets/icon/chip12.png';
+import chipIcon from '../../assets/icon/chipIcon.png';
 import Input from '../UI/Input';
 import Card from "../Card";
 import './style.scss';
@@ -83,7 +83,7 @@ export default function GameRatio(props) {
                     cardInputs={
                         <div className={'card_inputs'}>
                             <Input
-                                type={'number'}
+                                type={'text'}
                                 placeholder={'set amount'}
                                 name={'setBuyInAmount'}
                                 value={buyInAmount}
@@ -92,12 +92,12 @@ export default function GameRatio(props) {
                                 onChange={handleChange}
                             />
                             <Input
-                                type={'number'}
+                                type={'text'}
                                 placeholder={'set amount'}
                                 name={'setChipsAmount'}
                                 value={chipsAmount}
                                 line={'chip amount'}
-                                icon={<img alt={'chip icon'} style={{ width: '20px' }} src={chipIcon}/>}
+                                icon={<img alt={'chip icon'} style={{ width: '12px' }} src={chipIcon}/>}
                                 onChange={handleChange}
                             />
                         </div>
@@ -118,7 +118,7 @@ export default function GameRatio(props) {
                     cardInputs={
                         <div className={'card_inputs'}>
                             <Input
-                                type={'number'}
+                                type={'text'}
                                 placeholder={'set amount'}
                                 name={'setBuyInAmount'}
                                 value={buyInAmount}
@@ -127,12 +127,12 @@ export default function GameRatio(props) {
                                 onChange={handleChange}
                             />
                             <Input
-                                type={'number'}
+                                type={'text'}
                                 placeholder={'set chips ratio'}
                                 name={'setRatio'}
                                 value={ratio}
                                 line={`$1 = "chips"`}
-                                icon={<img alt={'chip icon'} style={{ width: '20px' }} src={chipIcon}/>}
+                                icon={<img alt={'chip icon'} style={{ width: '12px' }} src={chipIcon}/>}
                                 onChange={handleChange}
                             />
                         </div>
