@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "949f611df1b1f590b426f38aa1e8881e",
+    "revision": "2097152b0508c0c8c21ff97620ea15bd",
     "url": "/Poker-Banker-Monkey/index.html"
   },
   {
-    "revision": "a7414b458670635ff23c",
-    "url": "/Poker-Banker-Monkey/static/css/main.7cc2f39e.chunk.css"
+    "revision": "b784b1f98ba56323c52f",
+    "url": "/Poker-Banker-Monkey/static/css/main.4ee80e4f.chunk.css"
   },
   {
-    "revision": "fff8bec7a9164df1614d",
-    "url": "/Poker-Banker-Monkey/static/js/2.d7ff66ea.chunk.js"
+    "revision": "c2ee54800d52bc80eb14",
+    "url": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js"
   },
   {
     "revision": "68ba00d5eb083746d913686923a3d904",
-    "url": "/Poker-Banker-Monkey/static/js/2.d7ff66ea.chunk.js.LICENSE.txt"
+    "url": "/Poker-Banker-Monkey/static/js/2.7fea2494.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7414b458670635ff23c",
-    "url": "/Poker-Banker-Monkey/static/js/main.414e1000.chunk.js"
+    "revision": "b784b1f98ba56323c52f",
+    "url": "/Poker-Banker-Monkey/static/js/main.eb756f7b.chunk.js"
   },
   {
     "revision": "d00c39f157c250ff1464",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Poker-Banker-Monkey/static/media/ace.a0df250c.png"
   },
   {
-    "revision": "fd6df6c1b34506c36d80a800964edbdc",
-    "url": "/Poker-Banker-Monkey/static/media/chip12.fd6df6c1.png"
+    "revision": "c4825c141130eba32e39fe4079c5b56b",
+    "url": "/Poker-Banker-Monkey/static/media/chipIcon.c4825c14.png"
   },
   {
-    "revision": "efbf11f2fdcd6cf53609abe953f0cb19",
-    "url": "/Poker-Banker-Monkey/static/media/gold monkey 2.efbf11f2.png"
+    "revision": "1f89487342084f8b151dce8411cf85ca",
+    "url": "/Poker-Banker-Monkey/static/media/gold monkey 2.1f894873.png"
   },
   {
     "revision": "be5f0bc0d721b7f00f4c3f6e8c671978",
